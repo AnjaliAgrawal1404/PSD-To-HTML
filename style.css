@@ -1,0 +1,783 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+
+    height: 900px;
+}
+
+.container {
+
+    margin: 0 auto;
+    height: 900px;
+}
+
+.header {
+    height: 90px;
+    background-color: #313a43;
+}
+
+.logo {
+    width: 40%;
+    float: inline-start;
+}
+
+.nav {
+    width: 60%;
+    float: right;
+}
+
+.nav ul {
+    list-style-type: none;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 34px 16px;
+    text-decoration: none;
+
+}
+
+.activetab
+{
+    background-color: #18242c;
+    border-bottom: 3px solid #475058;
+}
+
+.nav li a:hover{
+
+    background-color: #18242c;
+    border-bottom: 3px solid #475058;
+}
+
+.logo div {
+    padding-left: 218px;
+    color: #b2b4b7;
+    padding-top: 19px;
+}
+
+.subimg {
+    width: 440px;
+    float: right;
+    margin-left: 90px;
+    margin-top: -12px
+}
+
+.headerfont {
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.headerfont2 {
+    font-size: xx-large;
+}
+
+.navsubheading {
+    margin-top: 0%;
+    color: #b2b4b7;
+
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 600px;
+}
+
+.fimg {
+    width: 100%;
+    height: 600px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #a8bfad;
+    font-size: 18px;
+    top: 347px;
+    left: 130px;
+    position: absolute;
+
+}
+
+.imgbtn {
+    color: #f2f2f2;
+    font-size: 18px;
+    top: 435px;
+    left: 130px;
+    position: absolute;
+    border: 1px solid white;
+    background: none;
+    padding: 8px;
+    height: 36px;
+
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+.dotmain {
+    text-align: center;
+    margin-top: -119px;
+}
+
+.top-centertxt {
+    position: absolute;
+    top: 275px;
+    left: 130px;
+    color: white;
+}
+
+.afterimg {
+    margin-top: 145px;
+    text-align: center;
+    color: #535353;
+
+}
+
+.services {
+    margin-top: 58px;
+    background-color: #efefef;
+    height: 680px;
+    text-align: center;
+}
+
+.sericon {
+    width: 47px;
+    filter: opacity(0.5);
+}
+
+.sertitle {
+    color: #828282;
+    padding-top: 52px;
+}
+
+.circle-icon {
+    background: white;
+    padding: 30px;
+    border-radius: 50%;
+    width: 187px;
+    margin-top: 20px;
+
+}
+
+.circletxt {
+
+    float: left;
+    padding-right: 44px;
+
+}
+
+.txtspace {
+    margin-top: 8px;
+}
+
+.clr {
+    color: #bababa;
+}
+
+.servicebtn {
+    width: 98px;
+    padding: 10px;
+    background-color: #d9d8d9;
+    border: none;
+    color: #ababab;
+    border-bottom: 3px solid #c4c3c4;
+    border-radius: 2px;
+}
+
+.servicebtn:focus {
+    color: white;
+    background-color: #59a3fc;
+}
+
+.activebtn {
+    color: white;
+    background-color: #59a3fc;
+}
+
+.servicelastbtn {
+    width: 338px;
+    background-color: #e1e1e1;
+    border: none;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 2px;
+    color: #ababab;
+    border-bottom: 3px solid #c4c3c4;
+    margin-right: 377px;
+}
+
+.servicelastbtn:focus,
+.servicelastbtn:hover {
+    background-color: gray;
+
+}
+
+.livecount {
+    height: 230px;
+    background-color: #2a323a;
+    /* background-image: url(image/clientcountbg.jpg); */
+    padding-top: 32px;
+    padding-left: 115px;
+}
+
+.livespace {
+    float: left;
+    padding-left: 95px;
+
+}
+
+.countimg {
+    width: 100px;
+    margin-left: 14px;
+
+}
+
+.counttxt {
+    color: #babcbe;
+    padding-block-start: 11px;
+    font-size: 20px;
+}
+
+.countsubtxt {
+    color: white;
+}
+
+.projecticon {
+    width: 70px;
+    filter: opacity(0.5);
+}
+
+.gallery {
+    height: 887px;
+    text-align: center;
+}
+
+
+.protitle {
+    color: #828282;
+    padding-top: 4px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    padding-left: 143px;
+}
+
+.tabcontent img {
+    width: 325px;
+    height: 190px;
+    padding: 10px;
+
+}
+
+.tab ul {
+
+    color: gray;
+    margin: 0;
+    padding-left: 437px;
+    padding-top: 20px;
+    padding-bottom: 38px;
+
+
+}
+
+.tab li {
+    margin-left: 34px;
+    float: left;
+
+}
+
+.tab li a {
+    color: #828282;
+    text-decoration: none;
+
+}
+
+.tab ul li.activeproject a {
+    color: #59a3fc;
+}
+
+.activeproject:active {
+
+    color: #59a3fc;
+}
+
+.loadmorebtn {
+    width: 338px;
+    background-color: #e1e1e1;
+    border: none;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 2px;
+    color: #ababab;
+    border-bottom: 3px solid #c4c3c4;
+    margin-left: -113px;
+}
+
+.loadmorebtn:focus,
+.loadmorebtn:hover {
+    background-color: gray;
+}
+
+.card-container {
+    position: relative;
+    width: 325px;
+    height: 190px;
+    padding: 10px;
+    float: left;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 304px;
+    height: 170px;
+    transition: .5s ease;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.card-container:hover .overlay {
+    opacity: 1;
+
+}
+
+.hearticon {
+    color: red;
+
+}
+
+.projectimgtxt {
+    color: #ababab;
+}
+
+.clients {
+    height: 400px;
+    position: relative;
+    background-image: url(image/client.png);
+    margin-top: 197px;
+}
+
+.clientslide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Caption text */
+.client-says {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.client-name {
+    position: absolute;
+    top: 280px;
+    left: 600px;
+    color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot-client {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 66px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.quote {
+    text-align: center;
+    font-size: 109px;
+    padding-top: 15px;
+    color: white;
+    margin: 0px;
+}
+
+.clientimg {
+    width: 123px;
+    margin-left: 574px;
+    margin-top: 26px
+}
+
+.about-us {
+    height: 735px;
+    text-align: center;
+}
+
+.aboutsubtitle {
+    color: #ababab;
+    font-size: 23px;
+}
+
+.aboutimg {
+    width: 440px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.abouticons {
+    background-color: #d4d4d4;
+    margin: auto;
+    width: 140px;
+    padding: 4px;
+    font-size: 24px;
+
+}
+
+.mediafafaicon {
+
+    color: #b8b8b8;
+    padding-right: 8px;
+}
+
+.aboutbtn {
+    background-color: #f7f7f7;
+    margin: auto;
+    width: 774px;
+    padding: 1px;
+    margin-top: 40px;
+    display: flex;
+    padding-left: 30px;
+}
+
+.applybtn {
+    height: 29px;
+    margin: 9px;
+    background-color: #59a3fc;
+    color: white;
+    border: none;
+    width: 115px;
+}
+
+.social-media {
+    height: 200px;
+    background-image: url(image/mapiconbg.jpeg);
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 245px;
+
+}
+
+.card {
+    background-image: url('image/map.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 173px;
+    height: 163px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.twitter-card::before {
+    background-color: rgba(0, 172, 238, 0.5);
+}
+
+.google-card::before {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.rss-card::before {
+    background-color: rgba(255, 104, 31, 0.5);
+}
+
+.card a,
+.card h2,
+.card p {
+    position: relative;
+
+}
+
+.card h2 {
+    margin-top: 4px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.card p {
+    margin-top: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.card span {
+    color: #8994ad;
+    font-size: smaller;
+}
+
+.card i {
+    font-size: 60px;
+    color: white;
+    padding-top: 14px;
+}
+
+.contacticon {
+    width: 50px;
+    filter: opacity(0.5);
+}
+
+.contact ul {
+    color: gray;
+    margin: 0;
+    padding-left: 339px;
+    padding-bottom: 38px;
+}
+
+.contact li {
+    margin-left: 34px;
+    float: left;
+    color: #828282;
+
+}
+
+.contact li a {
+
+    text-decoration: none;
+    color: #59a3fc;
+
+}
+
+.contact li::marker {
+    color: #828282;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+}
+
+.spc {
+    padding-left: 293px;
+}
+
+.contactfield {
+    width: 230px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+label {
+    margin-left: -166px;
+    margin-bottom: 10px;
+    display: block;
+    color: #ababab;
+}
+
+.txtspc {
+    padding-left: 314px;
+
+}
+
+.textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 155px;
+    width: 731px;
+}
+
+.txtarealbl {
+    color: #ababab;
+    margin-left: -656px;
+}
+
+.msgbtn {
+    height: 37px;
+    margin: 9px;
+    background-color: #59a3fc;
+    color: white;
+    border: none;
+    width: 148px;
+    border-radius: 3px;
+}
+
+.txtbeforbtn {
+    display: ruby;
+    float: right;
+    padding-right: 227px;
+    color: gray;
+}
+
+.subscriber {
+    height: 270px;
+    background-color: #505050;
+    text-align: center;
+}
+
+.subheading {
+    margin-top: 0px;
+    padding-top: 26px;
+    color: white;
+    font-size: x-large;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.icon {
+    padding-top: 5px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 316px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscribebtn {
+
+    background-color: #84c15d;
+    padding: 12px;
+    width: 119px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.footer {
+    height: 180px;
+    background-image: url(image/footerbg.PNG);
+    text-align: center;
+}
+
+.fh {
+    margin-top: 0px;
+    padding-top: 31px;
+    color: #65696c;
+    margin-bottom: 0px;
+}
+
+.footericon {
+    font-size: 24px;
+}
